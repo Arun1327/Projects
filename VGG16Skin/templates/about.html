@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static\about.css" />
+    <link rel="icon" href="C:\Users\Admin\nmproj\static\pngwing.com.png" />
+    <title>About</title>
+  </head>
+  <body>
+    <header class="header-section">
+      <!--Site Logo-->
+      <img src="{{ url_for('static', filename='dermalogo.jpg') }}" alt="Logo" />
+
+      <nav class="navbar">
+        <h2>Skin Disease Detection</h2>
+        <!-- Menu -->
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/Dermatalogist">Dermatalogist</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="about">
+      <img
+        src="{{ url_for('static', filename='aboutImage.jpg') }}"
+        alt="Logo"
+        class="img2"
+      />
+      <div>
+        <p class="head">About us</p>
+        <p class="para">
+          Research has demonstrated the potential of skin tissue in aiding
+          disease detection, particularly in the realm of dermatology. Various
+          studies have explored the utility of skin tissue in identifying
+          different types of skin conditions, including but not limited to
+          melanoma, psoriasis, and eczema. Skin tissue contains a rich array of
+          biomarkers, cellular structures, and molecular signatures that can
+          provide valuable insights into the presence and progression of various
+          diseases. One of the primary advantages of using skin tissue for
+          disease detection lies in its accessibility and non-invasive nature.
+          Unlike traditional biopsy procedures that involve invasive tissue
+          sampling, skin tissue can be readily accessed through non-invasive
+          methods such as dermatoscopy, reflectance confocal microscopy, and
+          optical coherence tomography. These techniques allow for real-time
+          visualization and analysis of skin tissue at the microscopic level,
+          enabling early detection and characterization of skin diseases.
+          Furthermore, skin tissue offers a dynamic platform for biomarker
+          discovery and validation. The skin is a complex organ with diverse
+          cell types, including keratinocytes, melanocytes, fibroblasts, and
+          immune cells, each contributing to the skin's unique physiological and
+          immunological properties. Changes in the expression levels of specific
+          proteins, nucleic acids, or metabolites within these cells can serve
+          as biomarkers indicative of underlying disease processes. In addition
+          to traditional histopathological analysis, emerging technologies such
+          as mass spectrometry imaging, molecular profiling, and machine
+          learning-based image analysis are being increasingly employed to
+          interrogate skin tissue for disease-related biomarkers.
+        </p>
+        <div class="read">
+          <div>
+            <button><a href="#">Read More</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

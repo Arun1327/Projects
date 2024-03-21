@@ -1,0 +1,130 @@
+* {
+    margin: 0.1px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+
+  }
+  body {
+    background-color: rgb(167, 180, 165);
+  }
+
+  .header-section {
+    height: 10vh;
+    background-color: rgb(83, 108, 83, 0.95);
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .header-section img {
+    width: 8%;
+    height: 100%;
+    margin-left: 30px;
+  }
+  .navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  .navbar h2 {
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 25rem;
+  }
+  .navbar ul {
+    font-size: 1.2rem;
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+  }
+  /* list decoration */
+  .navbar li {
+    display: block;
+    transition: 0.5s;
+  }
+  .navbar ul:hover li {
+    filter: blur(5px);
+  }
+  .navbar ul li:hover {
+    filter: blur(0px);
+  }
+
+  /* decoration complete */
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  /* navbar completed */
+
+  .content {
+    margin: 3rem 12rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+  }
+  .topic {
+    height: 4rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(1, 129, 58);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_content {
+    display: flex;
+    padding: 0 4rem 3rem 4rem;
+  }
+
+  .list2 {
+    list-style: none;
+  }
+  .li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .li1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+  }
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .sub {
+    margin: 1rem 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+
+  /* Media Queries */
+@media only screen and (max-width: 1300px) {
+  /* Medium Size */
+  .navbar h2 {
+      padding-left: 10rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  /* Normal Size */
+  .navbar h2 {
+      padding-left: 5rem;
+  }
+}

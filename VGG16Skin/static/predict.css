@@ -1,0 +1,149 @@
+* {
+    margin: 0.1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(167, 180, 165);
+}
+
+.header-section {
+    height: 10vh;
+    background-color: rgb(83, 108, 83, 0.95);
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.header-section img {
+    width: 8%;
+    height: 100%;
+    margin-left: 30px;
+}
+
+.navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.navbar h2 {
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 28rem;
+}
+
+.navbar ul {
+    font-size: 1.2rem;
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+/* list decoration */
+.navbar li {
+    display: block;
+    transition: .5s;
+}
+
+.navbar ul:hover li {
+    filter: blur(5px);
+}
+
+.navbar ul li:hover {
+    filter: blur(0px);
+}
+
+/* decoration complete */
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* navbar completed */
+/* choice design */
+.choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: rgba(225, 242, 225, 0.4);
+    border-radius: 20px;
+}
+
+.upload-box {
+    font-size: 11px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 2px 1px 5px black;
+    width: 300px;
+    outline: none;
+}
+
+::-webkit-file-upload-button {
+    color: rgb(0, 0, 0);
+    background: rgb(255, 217, 102);
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 40px;
+    box-shadow: 1px 0 1px 1px black;
+    outline: none;
+}
+
+.form1 {
+    width: 100%;
+    height: 30%;
+    font-size: 40px;
+}
+
+.choice .submit {
+    margin: 0 0 0 2rem;
+    font-size: 1rem;
+    padding: .1rem 1rem;
+    border-radius: 10px;
+}
+
+.choice .upload {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+}
+
+.form2 {
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form2 input {
+    color: black;
+    border-color: black;
+    background-color: rgb(167, 180, 165);
+    font-size: 1rem;
+    padding: 1rem 2rem;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1300px) {
+    /* Medium Size */
+    .navbar h2 {
+        padding-left: 10rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    /* Normal Size */
+    .navbar h2 {
+        padding-left: 5rem;
+    }
+}

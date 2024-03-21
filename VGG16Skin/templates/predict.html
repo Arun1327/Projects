@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="static\predict.css" />
+    <link rel="icon" href="C:\Users\Admin\nmproj\static\pngwing.com.png" />
+    <title>Dermatalogist</title>
+  </head>
+  <body>
+    <header class="header-section">
+      <!--Site Logo-->
+      <img src="{{ url_for('static', filename='dermalogo.jpg') }}" alt="Logo" />
+
+      <nav class="navbar">
+        <h2>Skin Disease Detection</h2>
+        <!-- Menu -->
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/Dermatalogist">Dermatalogist</a></li>
+          <!-- <li><i class="fa-solid fa-magnifying-glass"></i></li> -->
+        </ul>
+      </nav>
+    </header>
+    <section class="choice">
+      <form
+        action="/Predict"
+        method="POST"
+        class="form1"
+        enctype="multipart/form-data"
+      >
+        <input type="file" name="image" />
+        <input type="submit" name="submit" value="upload" class="upload" />
+      </form>
+      <br />
+      <form class="form2">
+        <input type="text" name="nresult" value="{{ prediction }}" readonly />
+      </form>
+    </section>
+  </body>
+</html>

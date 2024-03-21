@@ -1,0 +1,132 @@
+* {
+    margin: 0.1px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+
+  }
+  body {
+    height: 100vh;
+    background-color: rgb(167, 180, 165);
+  }
+
+  .header-section {
+    height:10vh;
+    background-color: rgb(83, 108, 83, 0.95);
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .header-section img {
+    width: 8%;
+    height: 100%;
+    margin-left: 30px;
+  }
+  .navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  .navbar h2 {
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 28rem;
+  }
+  .navbar ul {
+    font-size: 1.2rem;
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+  }
+  /* list decoration */
+  .navbar li {
+    display: block;
+    transition: 0.5s;
+  }
+  .navbar ul:hover li {
+    filter: blur(5px);
+  }
+  .navbar ul li:hover {
+    filter: blur(0px);
+  }
+
+  /* decoration complete */
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  /* navbar completed */
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+  }
+
+  /* body */
+
+  .page-top-section {
+    display: flex;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    width: 100%;
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .page-info {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .page-content {
+    margin: 0 20rem;
+    font-size: 1rem;
+  }
+  .important {
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .important button {
+    position: relative;
+    font-size: 15px;
+    border: none;
+    transition: 0.4s ease-in;
+    z-index: 1;
+    padding: 0.5rem 1rem;
+  }
+  .important button::before,
+  button::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+  }
+  .important a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #34aa79;
+  }
+  .important button:hover {
+    border: 2px solid #34aa79;
+    color: #97ffd4;
+    background-color: #17181c;
+    font-weight: bold;
+  }
+
+  /* Media Queries */
+@media only screen and (max-width: 1300px) {
+  /* Medium Size */
+  .navbar h2 {
+      padding-left: 10rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  /* Normal Size */
+  .navbar h2 {
+      padding-left: 5rem;
+  }
+}

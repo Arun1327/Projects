@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static\index.css" />
+  </head>
+  <body>
+    <header class="header-section">
+      <!--Site Logo-->
+      <img src="{{ url_for('static', filename='dermalogo.jpg') }}" alt="Logo" />
+
+      <nav class="navbar">
+        <h2>SKIN DISEASE DETECTION</h2>
+        <!-- Menu -->
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/Dermatalogist">Dermatalogist</a></li>
+          <!-- <li><i class="fa-solid fa-magnifying-glass"></i></li> -->
+        </ul>
+      </nav>
+    </header>
+    <section class="content">
+      <div class="topic">Deep Learning Model For Detecting Skin Diseases</div>
+      <div class="main_content">
+        Skin disease detection is a critical area in healthcare, given the
+        prevalence and impact of skin conditions on individuals' health and
+        quality of life. Skin diseases encompass a wide range of conditions,
+        including dermatitis, eczema, psoriasis, acne, melanoma, and various
+        infections. Accurate and timely detection of skin diseases is crucial
+        for effective treatment and management, as many conditions can worsen if
+        left untreated. Currently, diagnosing skin diseases often relies on
+        manual observation by dermatologists or healthcare professionals, which
+        can be subjective and time-consuming. Moreover, access to specialized
+        healthcare services may be limited, particularly in rural or remote
+        areas. This can result in delayed diagnosis and treatment, leading to
+        potential complications and worsening of the condition. To address these
+        challenges, there is growing interest in developing automated systems
+        for skin disease detection using artificial intelligence (AI) and
+        machine learning (ML) techniques. These systems leverage computer vision
+        algorithms to analyze images of skin lesions and identify potential
+        diseases or abnormalities. By utilizing large datasets of annotated skin
+        images, these models can learn to recognize patterns and features
+        indicative of specific skin conditions.
+      </div>
+    </section>
+    <section class="below">
+      <ul class="list2">
+        <li class="li">MODEL EMPLOYED FOR THE PROJECT</li>
+        <li class="li1">Transfer Learning Project</li>
+      </ul>
+    </section>
+    <section class="down">
+      <div class="img">
+        <img
+          src="{{ url_for('static', filename='vgg16.png') }}"
+          alt="VGG16"
+          width="100"
+          height="100"
+        />
+      </div>
+
+      <p class="head">VGG16</p>
+      <div class="sub">
+        VGG-16 is a convolutional neural network that is 16 layer deep. The
+        Pretrained network can classify image into 1000 object categories such
+        as keyboard, mouse, pencil, and many animals.
+      </div>
+    </section>
+  </body>
+</html>

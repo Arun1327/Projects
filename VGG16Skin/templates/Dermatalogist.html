@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="C:\Users\Admin\nmproj\static\logo.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="static\Dermatalogist.css" />
+    <title>Dermatalogist</title>
+  </head>
+  <body>
+    <header class="header-section">
+      <!--Site Logo-->
+      <img src="{{ url_for('static', filename='dermalogo.jpg') }}" alt="Logo" />
+
+      <nav class="navbar">
+        <h2>Skin Disease Detection</h2>
+        <!-- Menu -->
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="page-top-section">
+      <br /><br />
+
+      <div class="page-info">OUR PROJECT ON SKIN DISEASES</div>
+    </div>
+
+    <section class="page-content">
+      <p>
+        Skin disease diagnosis is a critical aspect of healthcare, with skin
+        conditions affecting millions of individuals worldwide. The proposed
+        system - Skin Disease Image Processing System, aims to revolutionize the
+        diagnosis and management of skin diseases through automated image
+        analysis techniques. The input to the system is images of the affected
+        skin areas, captured using a smartphone or digital camera. The system
+        begins by segmenting the skin lesions from the surrounding healthy skin,
+        using image processing algorithms. Once segmented, various features such
+        as color, texture, and shape are extracted from the skin lesions. These
+        features are then combined to form a feature vector, which represents
+        the unique characteristics of each skin lesion.
+      </p>
+    </section>
+    <section class="important">
+      <div>
+        <button><a href="/Predict">Predict</a></button>
+      </div>
+    </section>
+  </body>
+</html>
